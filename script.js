@@ -1,11 +1,12 @@
 'use strict'
 $('document').ready(function(){
-    loadGoods()})
+    loadGoods();
+});
 
 
 //загрузка товаров на страницу
-function loadGoods(){
-    $.getJSON('goods.json'), function (data){
+function loadGoods() {
+    $.getJSON('goods.json', function (data){
         console.log(data);
-    }
+    })
 }

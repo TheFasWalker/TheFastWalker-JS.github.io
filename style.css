@@ -1,0 +1,23 @@
+
+header{
+	width: 100%;
+	height: 150px;
+	background-color: greenyellow;
+	padding: 5px;
+}
+
+.cart-button{
+	background-color: aqua;
+	border-radius: 10px;
+	float: right	
+}
+.goods{
+	width: 100%;
+	min-height: 250px;
+	background-color: aquamarine;
+}
+.footer{
+	width: 100%;
+	height: 150px;
+	background-color: beige;
+}
