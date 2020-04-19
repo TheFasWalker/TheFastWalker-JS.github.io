@@ -1,18 +1,23 @@
 {
     "001" :{
         "title" : "Shirt",
-        "price" : 150
+        "price" : 150,
+	 "image" :"page.jpg"
+	    
     },  
     "002" :{
         "title" : "Socks",
-        "price" : 50
+        "price" : 50,
+	 "image" :"page.jpg"
     },
     "003" :{
         "title" : "Jacket",
-        "price" : 350
+        "price" : 350,
+	 "image" :"page.jpg"
     },
     "004" :{
         "title" : "Shoes",
-        "price" : 250
+        "price" : 250,
+	 "image" :"page.jpg"
     }
 }
