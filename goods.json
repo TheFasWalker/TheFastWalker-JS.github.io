@@ -1,0 +1,18 @@
+{
+    "001" :{
+        "title" : "Shirt",
+        "price" : 150
+    },  
+    "002" :{
+        "title" : "Socks",
+        "price" : 50
+    },
+    "003" :{
+        "title" : "Jacket",
+        "price" : 350
+    },
+    "004" :{
+        "title" : "Shoes",
+        "price" : 250
+    }
+}
