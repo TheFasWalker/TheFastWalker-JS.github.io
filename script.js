@@ -10,9 +10,12 @@ function loadGoods() {
         //console.log(data);
 	    var out = '';
 	    for (var key in data){
-		    out+='<p>'+data[key]['title']+'</p>';
-		    out+='<p>'+data[key]['cost']+'</p>';	
+		    out+='<div class="single-goods">';
+		    out+='<p>название'+data[key]['title']+'</p>';
+		    out+='<p>Стоимость'+data[key]['cost']+'</p>';	
 		    out+='<img src="'+data[key].image+'">';
+		    out+='<button>Купить</button>';
+		    out+='</div>';
 	    }
 	    $('#goods').html(out);
     })

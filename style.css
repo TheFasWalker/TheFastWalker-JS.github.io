@@ -15,6 +15,7 @@ header{
 	width: 100%;
 	min-height: 300px;
 	background-color: aquamarine;
+	display: grid;
 }
 .footer{
 	width: 100%;
@@ -22,4 +23,17 @@ header{
 	background-color: gainsboro;
 	text-align: center;
 	padding-top:10px;
+}
+//стилизация создаваемого JSом блока
+.single-goods{
+	width: 200px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.single-goods button {
+	display: block;
+	margin: 20pxs auto;
 }
