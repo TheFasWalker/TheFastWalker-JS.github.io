@@ -1,4 +1,4 @@
-
+var cart = {}; //массив корзины
 $('document').ready(function(){
     loadGoods();
 });
@@ -12,11 +12,23 @@ function loadGoods() {
 	    for (var key in data){
 		    out+='<div class="single-goods">';
 		    out+='<p>название'+data[key]['title']+'</p>';
-		    out+='<p>Стоимость'+data[key]['cost']+'</p>';	
+		    out+='<p>Стоимость'+data[key]['price']+'</p>';	
 		    out+='<img src="'+data[key].image+'">';
-		    out+='<button>Купить</button>';
+		    out+='<button class="toCard" data-art="'key'">Купить</button>'; // возможна ошибка из за  key!!!! 
 		    out+='</div>';
 	    }
 	    $('#goods').html(out);
-    })
+	    $('button.toCard').on('click',addToCard);
+    });
+}
+//добавление в корзину
+function addToCard() {
+	var articul = $(this).attr('data-art');
+	if (cart[articul]!=undefined) {
+		cart[articul]++;
+	} 
+	else
+		{cart[articul] = 1;
+		};
+	
 }
